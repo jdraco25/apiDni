@@ -22,4 +22,9 @@ router.get('/api2', async(req, res) => {
     res.send(body);
 });
 
+router.get('/', async(req, res) => {
+
+    res.send('hola');
+});
+
 module.exports = router;
