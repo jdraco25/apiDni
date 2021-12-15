@@ -5,8 +5,8 @@ require('./DBUtil_user');
 require('./DB_sqlServer');
 require('./controllers/verifyToken');*/
 async function init() {
-    await app.listen(3008);
-    console.log('Server on port 3008');
+    await app.listen(3000);
+    console.log('Server on port 3000');
 }
 
 
