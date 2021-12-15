@@ -23,7 +23,7 @@ router.get('/api2', async(req, res) => {
 });
 
 router.get('/', async(req, res) => {
-
+    console.log('Server on port 3000');
     res.send('hola');
 });
 
