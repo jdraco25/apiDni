@@ -3,7 +3,6 @@ const app = express();
 const cors = require('cors');
 const path = require('path');
 
-const router = express.Router();
 const fetch = require('node-fetch');
 const Bluebird = require('bluebird');
 fetch.Promise = Bluebird;
@@ -18,6 +17,7 @@ app.set('view engine', 'ejs');
 //app.use('/dni', require('./controllers/dniController'));
 
 app.get('/api2', async(req, res) => {
+    console.log('patron')
     const opts = {
         method: 'POST',
         headers: {
@@ -36,7 +36,7 @@ app.get('/api2', async(req, res) => {
 });
 
 app.get('/', async(req, res) => {
-
+    console.log('patron')
     res.send('hola');
 });
 
